@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background: -o-linear-gradient(135deg, #35C3F3, #8b9fe8, #e681d8, #ffa9a4, #FED2CE);
+    background: linear-gradient(-45deg, #35C3F3, #8b9fe8, #e681d8, #ffa9a4, #FED2CE);
+    background-size: 250% 250%;
+
+    -webkit-animation: animateBackground 10s ease infinite;
+    -moz-animation: animateBackground 10s ease infinite;
+    -o-animation: animateBackground 10s ease infinite;
+    animation: animateBackground 10s ease infinite;
+}
+
+@-webkit-keyframes animateBackground {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@-moz-keyframes animateBackground {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@-o-keyframes animateBackground {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@keyframes animateBackground {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.225);
+}
+
+form h1 {
+    color: #000000;
+    font-size: 22px;
+    text-align: center;       
+    font-weight: 700;         
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    
+    color: #000000;
+    background-color: rgba(255,255,255,0.5);
+
+    margin-bottom: 10px;
+}
+
+form button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    
+    background: rgba(255,255,255,0.5);    
+    
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+form button:hover {
+    background-color: rgba(0, 0, 0, .65);
+    color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}

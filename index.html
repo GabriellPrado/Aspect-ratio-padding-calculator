@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="GabriellPrado">
+        <title>Aspect-ratio padding calculator</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form id="proporcaoForm">
+            <h1>Aspect-ratio padding calculator</h1>
+
+            <div class="input">
+                <input type="number" id="larguraInput" placeholder="Largura em pixels">
+            </div>
+          
+            <div class="input">
+                <input type="number" id="alturaInput" placeholder="Altura em pixels">
+            </div>
+          
+            <button type="button" onclick="calcularPadding()">Calcular Padding</button>
+            
+            <div id="resultadoPadding"></div>
+        </form>
+
+        <script src="main.js"></script>
+    </body>
+</html>
