@@ -10,6 +10,6 @@ function calcularPadding() {
       resultadoPadding.textContent = 'Insira valores válidos para largura e altura.';
     } else {
       const proporcao = (altura / largura) * 100;
-      resultadoPadding.textContent = `Padding-bottom: ${proporcao}%`;
+      resultadoPadding.textContent = `position: relative;<br>padding-bottom: ${proporcao}%;`;
     }
 }
